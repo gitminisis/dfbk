@@ -17,7 +17,9 @@ const AccordionComponent = (props) => {
             sx={{
               marginTop: "10px",
               padding: "15px 15px",
-              backgroundColor: "primary.light",
+              backgroundColor: "white",
+              border: "2px solid",
+              borderColor: "primary.light",
             }}
           >
             <AccordionSummary
@@ -31,8 +33,7 @@ const AccordionComponent = (props) => {
               <Typography
                 variant="p"
                 dangerouslySetInnerHTML={{ __html: item.description }}
-              >
-              </Typography>
+              ></Typography>
             </AccordionDetails>
           </Accordion>
         );
