@@ -4,7 +4,7 @@ const Home = [
   {
     component: "Layout",
     data: {
-      active: "Home",
+      active: "COLLECTIONS",
     },
     children: [...homeJSON],
   },

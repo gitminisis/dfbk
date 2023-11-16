@@ -41,6 +41,8 @@ export const AppbarLinkBox = styled(Box)(() => ({
 export const AppbarLink = styled(Link)(({ theme }) => ({
   fontWeight: "bold",
   color: "black",
+  marginLeft: "10px",
+  marginRight: "10px",
   textDecoration: "none",
   "&:hover": {
     color: theme.palette.primary.main,

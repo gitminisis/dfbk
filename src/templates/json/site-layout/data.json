@@ -1,12 +1,12 @@
 [
   {
-    "siteName": "Online Heritage Search",
+    "siteName": "Diefenbunker: Canada’s Cold War Museum",
     "logo": "https://diefenbunker.ca/wp-content/uploads/2022/06/long-d-Diefenbunker-CCWM-EN-FR-red-black-e1655226676785.png",
-    "logo2": "https://diefenbunker.ca/wp-content/uploads/2022/06/long-d-Diefenbunker-CCWM-EN-FR-red-black-e1655226676785.png",
+    "logo2": "/assets/images/logo-white.png",
     "links": [
       {
         "url": "/",
-        "title": "Home"
+        "title": "COLLECTIONS"
       },
 
       {

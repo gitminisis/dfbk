@@ -13,81 +13,69 @@ import NoRecord from "./NoRecord";
 import NoBookmark from "./NoBookmark";
 import SummaryOnlineExhibition from "./SummaryOnlineExhibition";
 import Admin from "./Admin";
-// const GenericPage = lazy(() =>
-//     import ("../pages/GenericPage"));
 
-// const Routes = [
-//     { path: "/", template: HomeTemplate },
-//     { path: "/archives", template: ArchivesSearchTemplate },
-//     { path: "/artifact", template: ArtifactSearchTemplate },
-//     { path: '/FAQ', template: FAQ },
-//     { path: '/summary', template: Summary },
-//     { path: "*", template: NotFoundPageTemplate },
-
-// ];
-
-const Routes = [{
+const Routes = [
+  {
     path: "",
-    template: HomeTemplate
-},
+    template: ArtifactSearchTemplate,
+  },
 
-
-{
+  {
     path: "archives",
-    template: ArchivesSearchTemplate
-},
-{
+    template: ArchivesSearchTemplate,
+  },
+  {
     path: "artifact",
-    template: ArtifactSearchTemplate
-},
-{
+    template: ArtifactSearchTemplate,
+  },
+  {
     path: "FAQ",
-    template: FAQ
-},
-{
+    template: FAQ,
+  },
+  {
     path: "summary",
-    template: Summary
-},
-{
+    template: Summary,
+  },
+  {
     path: "summary-onlineExhibitions",
     template: SummaryOnlineExhibition,
-},
-{
+  },
+  {
     path: "summary-artifact",
-    template: SummaryArtifact
-},
-{
+    template: SummaryArtifact,
+  },
+  {
     path: "summary-archives",
-    template: SummaryArchives
-},
-{
+    template: SummaryArchives,
+  },
+  {
     path: "summary-bookmark",
-    template: SummaryBookmark
-},
-{
+    template: SummaryBookmark,
+  },
+  {
     path: "detail",
-    template: Detail
-},
-{
+    template: Detail,
+  },
+  {
     path: "no-session",
-    template: NoSession
-},
-{
+    template: NoSession,
+  },
+  {
     path: "no-record",
-    template: NoRecord
-},
-{
+    template: NoRecord,
+  },
+  {
     path: "no-bookmark",
-    template: NoBookmark
-},
-{
+    template: NoBookmark,
+  },
+  {
     path: "admin",
-    template: Admin
-},
-{
+    template: Admin,
+  },
+  {
     path: "404",
-    template: NotFoundPageTemplate
-},
+    template: NotFoundPageTemplate,
+  },
 ];
 
 export default Routes;
