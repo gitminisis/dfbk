@@ -17,7 +17,7 @@ import Admin from "./Admin";
 const Routes = [
   {
     path: "",
-    template: ArtifactSearchTemplate,
+    template: HomeTemplate,
   },
 
   {
