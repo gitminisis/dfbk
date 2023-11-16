@@ -4,18 +4,18 @@ const baseTheme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      light: "#a6c866",
+      light: "#ce712c",
       main: "#DA1A32",
-      dark: "#2a4408",
+      dark: "#ce712c",
     },
     text: {
       primary: "#000000",
       secondary: "#DA1A32",
     },
     secondary: {
-      light: "#FBDF91",
-      main: "#ffd766",
-      dark: "#ffbc00",
+      light: "#4F4F4F",
+      main: "#363636",
+      dark: "#4F4F4F",
     },
   },
   typography: {
