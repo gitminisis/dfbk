@@ -1,0 +1,25 @@
+[
+  {
+    "siteName": "Online Heritage Search",
+    "logo": "https://diefenbunker.ca/wp-content/uploads/2022/06/long-d-Diefenbunker-CCWM-EN-FR-red-black-e1655226676785.png",
+    "logo2": "https://diefenbunker.ca/wp-content/uploads/2022/06/long-d-Diefenbunker-CCWM-EN-FR-red-black-e1655226676785.png",
+    "links": [
+      {
+        "url": "/",
+        "title": "Home"
+      },
+      {
+        "url": "/archives.html",
+        "title": "Archives"
+      },
+      {
+        "url": "/artifacts.html",
+        "title": "Artifacts"
+      },
+      {
+        "url": "/faq.html",
+        "title": "FAQ"
+      }
+    ]
+  }
+]

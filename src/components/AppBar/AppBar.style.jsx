@@ -7,7 +7,7 @@ export const AppbarRoot = styled(AppBar)(({ scroll, theme }) => ({
   boxShadow: "none",
   width: "100vw",
   transition: "all 300ms ease-out",
-  height: "79px",
+  height: "85px",
   justifyContent: "center",
   opacity: scroll === 0 ? 1 : 0.95,
   left: 0,
@@ -27,8 +27,8 @@ export const AppbarLogoBox = styled(Link)((_) => ({
 }));
 
 export const AppbarLogo = styled(Box)(() => ({
-  width: "5rem",
-  maxWidth: "150px",
+  width: "16rem",
+  maxWidth: "280px",
   marginRight: "10px",
 }));
 

@@ -20,7 +20,7 @@ import {
 import { Fade as Hamburger } from "hamburger-react";
 import { KeyboardArrowLeftOutlined } from "@mui/icons-material";
 const AppBar = (props) => {
-  const { links, logo, siteName, baseURL, active } = props;
+  const { links, logo, siteName, baseURL, active, headerURL } = props;
   const [isScroll, setIsScroll] = useState(0);
   const [isClicked, setIsClicked] = useState(false);
   const [open, setOpen] = useState(false);
@@ -94,10 +94,10 @@ const AppBar = (props) => {
                   component="img"
                   src={logo}
                   alt={`${siteName} logo`}
-                  onClick={(_) => (window.location = "https://www.surrey.ca/")}
+                  onClick={(_) => (window.location = headerURL)}
                 ></AppbarLogo>
               </div>
-              <strong>{siteName}</strong>
+              {/* <strong>{siteName}</strong> */}
             </AppbarLogoBox>
             <AppbarLinkBox
               sx={{
