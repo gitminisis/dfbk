@@ -15,7 +15,6 @@ import MessageModal from "../MessageModal";
 const MAX_SNACK = 3;
 import announcement from "../../templates/json/announcement/data.json";
 const Layout = ({ active, children }) => {
-  console.log(SiteLayout);
   return (
     <SnackbarProvider
       maxSnack={MAX_SNACK}

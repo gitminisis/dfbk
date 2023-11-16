@@ -8,14 +8,7 @@
         "url": "/",
         "title": "Home"
       },
-      {
-        "url": "/archives.html",
-        "title": "Archives"
-      },
-      {
-        "url": "/artifacts.html",
-        "title": "Artifacts"
-      },
+
       {
         "url": "/faq.html",
         "title": "FAQ"

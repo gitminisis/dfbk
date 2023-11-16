@@ -21,6 +21,7 @@ import { Fade as Hamburger } from "hamburger-react";
 import { KeyboardArrowLeftOutlined } from "@mui/icons-material";
 const AppBar = (props) => {
   const { links, logo, siteName, baseURL, active, headerURL } = props;
+  console.log(active);
   const [isScroll, setIsScroll] = useState(0);
   const [isClicked, setIsClicked] = useState(false);
   const [open, setOpen] = useState(false);

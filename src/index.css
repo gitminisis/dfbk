@@ -146,10 +146,7 @@ body {
 }
 
 .active-link {
-  display: flex !important;
-  height: 100% !important;
-  border-bottom: 3px solid white;
-  align-items: center !important;
+  color: #da1a32 !important;
 }
 
 img {
