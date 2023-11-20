@@ -172,7 +172,6 @@ export const getRecendAdditions = (session = "/scripts/mwimain.dll") => {
           if (Array.isArray(thumbnail)) {
             thumbnail = thumbnail[0];
           }
-          // thumbnail = thumbnail.replace(WEB_DNS, "surrey.minisisinc.com");
 
           acc.push({
             sisn: deepSearch(e, "sisn")[0],
@@ -231,7 +230,6 @@ export const getAllMedia = (record, database, mediaType = "image") => {
   let array = Array.isArray(mediaURL) ? mediaURL : [mediaURL];
   return array.map((e) =>
     e
-      // .replace("surreytest.minisisinc.COM", "surrey.minisisinc.com")
       .replace(/\n/g, "")
   );
 };
