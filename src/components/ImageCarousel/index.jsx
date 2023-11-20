@@ -1,24 +1,14 @@
-import React, { useRef, useState, useEffect } from "react";
 import PropTypes from "prop-types";
+import { useEffect, useState } from "react";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, {
-  EffectFlip,
-  Navigation,
-  Autoplay,
-  Pagination,
-  FreeMode,
-} from "swiper";
+import SwiperCore, { Autoplay, FreeMode, Navigation, Pagination } from "swiper";
 import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import "swiper/css/free-mode";
-import {
-  CarouselBox,
-  CarouselText,
-  CarouselPagination,
-} from "./ImageCarousel.style";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { getCurrentSession } from "../../utils/functions";
+import { CarouselBox, CarouselText } from "./ImageCarousel.style";
 
 const breakpoints = {
   600: {

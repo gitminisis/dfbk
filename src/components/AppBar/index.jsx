@@ -85,10 +85,11 @@ const AppBar = (props) => {
         <Container maxWidth={"true"}>
           <AppbarContainer maxWidth={"xl"}>
             <AppbarLogoBox
-              href={baseURL}
+              href={headerURL}
               underline="none"
               sx={{ color: "white" }}
               variant={"h5"}
+              target="_blank"
             >
               <div>
                 <AppbarLogo

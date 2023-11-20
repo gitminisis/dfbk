@@ -10,6 +10,14 @@
   },
   {
     "component": "Section",
+    "data": {
+      "heading": "About us",
+      "divider": true,
+      "description": "The Diefenbunker aims to increase, throughout Canada and the world, interest in and a critical understanding of the Cold War, by preserving the Diefenbunker as a national historic site, and operating a Cold War museum. The museum holds over 11,000 3-D and 2-D artifacts relevant to Canada’s Cold War history, spanning between 1945 and 1991. Search through this site to learn more about specific items in the Diefenbunker’s collections and archives"
+    }
+  },
+  {
+    "component": "Section",
     "data": { "heading": "Browse by category" },
     "children": [
       {
