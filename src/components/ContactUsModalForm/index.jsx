@@ -1,9 +1,8 @@
-import  { useState } from "react";
+import { useState } from "react";
 import PropTypes from "prop-types";
 import {
   Typography,
   Box,
-  Button,
   Modal,
   ModalDialog,
   FormControl,
@@ -13,6 +12,8 @@ import {
   Input,
   Textarea,
 } from "@mui/joy";
+
+import { Button } from "@mui/material";
 import { deepSearch, sendEmail } from "../../utils/functions";
 import { getEmailPermalink, getRecordPermalink } from "../../utils/record";
 import { useSnackbar } from "notistack";
@@ -67,7 +68,7 @@ const ContactUsModalForm = (props) => {
         color="primary"
         component="a"
         fontSize="lg"
-        level="h6"
+        level="p"
         fontWeight={700}
       >
         {description}
@@ -136,7 +137,7 @@ const ContactUsModalForm = (props) => {
                   defaultValue={text}
                   onChange={(event) => setText(event.target.value)}
                   endDecorator={
-                    <Typography level="body3" sx={{ ml: "auto" }}>
+                    <Typography level="p" sx={{ ml: "auto" }}>
                       {text.length} character(s)
                     </Typography>
                   }
@@ -144,7 +145,9 @@ const ContactUsModalForm = (props) => {
                   aria-label="Inquiry"
                 />
               </FormControl>
-              <Button type="submit">Submit</Button>
+              <Button color="primary" type="submit">
+                Submit
+              </Button>
             </Stack>
           </form>
         </ModalDialog>

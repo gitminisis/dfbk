@@ -86,7 +86,7 @@ const DescriptionTree = (props) => {
         label={
           loadMore === undefined ? (
             <Typography
-              level="h6"
+              level="p"
               component="a"
               href={getSearchRequestURL(
                 "DESCRIPTION",
@@ -105,7 +105,7 @@ const DescriptionTree = (props) => {
             </Typography>
           ) : (
             <Typography
-              level="h6"
+              level="p"
               component="p"
               onClick={(e) => {
                 if (loadMore !== undefined) {
@@ -167,7 +167,7 @@ const DescriptionTree = (props) => {
           color="primary"
           component="div"
           fontSize="lg"
-          level="h6"
+          level="p"
           fontWeight={700}
         >
           {title}

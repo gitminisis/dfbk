@@ -42,7 +42,7 @@ const GeneralSearchBox = (props) => {
     <Item elevation={6} sx={{ padding: "16px" }} className="back-top-anchor">
       <div>
         <Breadcrumbs aria-label="breadcrumb">
-          <Link underline="hover" color="inherit" variant="h6" href="/">
+          <Link underline="hover" color="inherit" variant="p" href="/">
             Home
           </Link>
           {breadcrumbs.map((e, i) => {
@@ -52,7 +52,7 @@ const GeneralSearchBox = (props) => {
             return (
               <Link
                 key={`breadcrumb-link-${i}`}
-                variant="h6"
+                variant="p"
                 underline={
                   i === breadcrumbs.length - 1
                     ? "none"
@@ -96,7 +96,6 @@ const GeneralSearchBox = (props) => {
                 name="KEYWORD_CL"
                 endDecorator={
                   <>
-                    {" "}
                     <Divider orientation="vertical" />
                     <Button disableRipple type="submit">
                       <SearchIcon />
@@ -108,7 +107,7 @@ const GeneralSearchBox = (props) => {
                     <Select
                       variant="plain"
                       defaultValue={databaseList.findIndex((e) => {
-                        return e.application === application;
+                        return e.application === database;
                       })}
                       onChange={(e, value) => {
                         setIndex(Number.parseInt(value));

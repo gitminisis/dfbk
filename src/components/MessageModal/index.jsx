@@ -50,10 +50,10 @@ const MessageModal = (props) => {
             color="primary"
             sx={{ mb: 5, fontWeight: "bold", textAlign: "center" }}
           >
-            Surrey Online Heritage Search Announcement
+            Announcement
           </Typography>
 
-          <Typography level="h6">{message}</Typography>
+          <Typography level="p">{message}</Typography>
 
           <Divider sx={{ my: 4 }} />
 

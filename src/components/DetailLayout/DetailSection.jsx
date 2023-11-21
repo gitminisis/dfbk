@@ -67,8 +67,7 @@ const DetailSection = (props) => {
             >
               {sections.map((e,i) => (
                 <Tab key={i} sx={{ px: 8, py: 2 }}>
-                  <Typography variant="h6" component="h3">
-                    {" "}
+                  <Typography variant="p" component="h3">
                     <strong>{e.title}</strong>
                   </Typography>
                 </Tab>

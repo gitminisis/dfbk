@@ -14,7 +14,7 @@ import {
   SORT_REPORTS_BY_DATABASE,
 } from "../templates/API";
 const DEFAULT_DETAIL_REPORT = "WEB_UNION_DETAIL";
-const WEB_DNS = "https://surrey.minisisinc.com";
+const WEB_DNS = "https://diefenbunkermuseum.minisisinc.com";
 const DEFAULT_SUM_REPORT = "WEB_UNION_SUM";
 const SUM_REPORT_BY_DATABASE = {
   COLLECTIONS: "WEB_UNION_SUM_COL",
@@ -228,10 +228,7 @@ export const getAllMedia = (record, database, mediaType = "image") => {
     return [];
   }
   let array = Array.isArray(mediaURL) ? mediaURL : [mediaURL];
-  return array.map((e) =>
-    e
-      .replace(/\n/g, "")
-  );
+  return array.map((e) => e.replace(/\n/g, ""));
 };
 
 export const getAllImageCaptions = (record) => {
