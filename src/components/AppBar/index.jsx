@@ -83,7 +83,7 @@ const AppBar = (props) => {
       </Drawer>
       <AppbarRoot className="header" scroll={isScroll}>
         <Container maxWidth={"true"}>
-          <AppbarContainer>
+          <AppbarContainer maxWidth={"true"}>
             <AppbarLogoBox
               href={headerURL}
               underline="none"
