@@ -1,0 +1,51 @@
+[
+  {
+    "component": "SimpleSearchBanner",
+    "data": {
+      "heading": "FAQ",
+
+      "searchURL": "/scripts/mwimain.dll?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&language=144&REPORT=WEB_UNION_SUM",
+      "noSearchBox": true,
+      "bannerCarousel": [
+        "https://diefenbunker.ca/wp-content/uploads/2023/01/DiefenBunker-39-scaled.jpg"
+      ]
+    }
+  },
+  {
+    "children": [
+      {
+        "data": {
+          "data": [
+            {
+              "title": "What sorts of artifacts can I find in the Diefenbunker’s collections and archives?",
+              "description": "The Diefenbunker aims to increase, throughout Canada and the world, interest in and a critical understanding of the Cold War, by preserving the Diefenbunker as a national historic site, and operating a Cold War museum. The museum holds over 11,000 3-D and 2-D artifacts relevant to Canada’s Cold War history, spanning between 1945 and 1991. <br />  <br /> Items in our collections are categorized into three levels:  <br />Level 1: objects originally within the site during its operational life (1962 to 1994)  <br />Level 2: objects adjacent to the site but not used within our site (e.g., from other Canadian Cold War bunkers)  <br />Level 3: objects related to Canadian and international Cold War history and culture (1945 to 1991) but not directly related to the history of our site  <br /> <br />Learn more about the Diefenbunker’s collections at <a href='https://diefenbunker.ca/collections/?utm_source=minisis&utm_medium=referral&utm_campaign=online_listing' target='_blank'>diefenbunker.ca/collections<a>."
+            },
+            {
+              "title": "How do I search for artifacts?",
+              "description": "Begin by typing a keyword search into the search bar. You can then refine your search by using the sort and filter options within the search page.<br /> <br /> You can also print records or bookmark items to reference again. Please note that your bookmarks will be cleared once you close the webpage in your web browser."
+            },
+            {
+              "title": "I can’t find what I’m looking for — what do I do?",
+              "description": "Please try another search term. If you still can’t find what you are looking for, please contact the Diefenbunker’s Curatorial team by email at <a href='mailto:s.campbell@diefenbunker.ca'>s.campbell@diefenbunker.ca</a> or by phone at 613-839-0007 x253."
+            },
+            {
+              "title": "I have questions about copyright or accessing the artifacts — who can I contact?",
+              "description": "For specific project requests, please contact the Diefenbunker’s Curatorial team by email at <a href='mailto:s.campbell@diefenbunker.ca'>s.campbell@diefenbunker.ca</a> or by phone at 613-839-0007 x253."
+            },
+            {
+              "title": "How can I donate to the collections?",
+              "description": "If you wish to inquire about donating items to our collections, please contact the Diefenbunker’s Curatorial team by email at <a href='mailto:s.campbell@diefenbunker.ca'>s.campbell@diefenbunker.ca</a> or by phone at 613-839-0007 x253."
+            },
+            {
+              "title": "Where can I learn more about the Diefenbunker?",
+              "description": "The Diefenbunker, a once-top secret, four-storey underground bunker, was originally designed as the centre for Canada’s defence against nuclear attack during the Cold War. It is now a one-of-a-kind museum and national historic site, offering unique and immersive experiences for visitors year-round.<br/><br/>Learn more about our guided tours, exhibitions, programs, events, and other offerings at <a href='https://diefenbunker.ca/collections/?utm_source=minisis&utm_medium=referral&utm_campaign=online_listing' target='_blank'>diefenbunker.ca</a>."
+            }
+          ]
+        },
+        "component": "Accordion"
+      }
+    ],
+    "component": "Section",
+    "data": { "heading": "FAQ" }
+  }
+]

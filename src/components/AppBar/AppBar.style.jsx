@@ -2,12 +2,11 @@ import { Container, Box, AppBar, Link } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 export const AppbarRoot = styled(AppBar)(({ scroll, theme }) => ({
-  backgroundColor:
-    scroll === 0 ? theme.palette.primary.main : theme.palette.primary.main,
+  backgroundColor: "white",
   boxShadow: "none",
   width: "100vw",
   transition: "all 300ms ease-out",
-  height: "79px",
+  height: "85px",
   justifyContent: "center",
   opacity: scroll === 0 ? 1 : 0.95,
   left: 0,
@@ -27,25 +26,25 @@ export const AppbarLogoBox = styled(Link)((_) => ({
 }));
 
 export const AppbarLogo = styled(Box)(() => ({
-  width: "5rem",
-  maxWidth: "150px",
+  width: "16rem",
+  maxWidth: "280px",
   marginRight: "10px",
 }));
 
 export const AppbarLinkBox = styled(Box)(() => ({
-  justifyContent: "space-between",
+  justifyContent: "end",
   width: "50%",
   alignItems: "center",
   cursor: "pointer",
 }));
 
-export const AppbarLink = styled(Link)(() => ({
-  display: "block",
-  height: "auto",
+export const AppbarLink = styled(Link)(({ theme }) => ({
   fontWeight: "bold",
-  color: "white",
+  color: "black",
+  marginLeft: "10px",
+  marginRight: "10px",
+  textDecoration: "none",
   "&:hover": {
-    opacity: 0.8,
-    textDecoration: "none",
+    color: theme.palette.primary.main,
   },
 }));

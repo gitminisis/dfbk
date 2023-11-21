@@ -1,0 +1,66 @@
+[
+  {
+    "data": {
+      "bannerCarousel": ["/assets/images/artifact.jpg"],
+      "heading": "EXPLORE OUR COLLECTIONS",
+
+      "searchURL": "/scripts/mwimain.dll?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM"
+    },
+    "component": "SimpleSearchBanner"
+  },
+  {
+    "component": "Section",
+    "data": {
+      "heading": "About us",
+      "divider": true,
+      "description": "The Diefenbunker aims to increase, throughout Canada and the world, interest in and a critical understanding of the Cold War, by preserving the Diefenbunker as a national historic site, and operating a Cold War museum. The museum holds over 11,000 3-D and 2-D artifacts relevant to Canada’s Cold War history, spanning between 1945 and 1991. Search through this site to learn more about specific items in the Diefenbunker’s collections and archives"
+    }
+  },
+  {
+    "component": "Section",
+    "data": { "heading": "Browse by category" },
+    "children": [
+      {
+        "component": "ImageCarousel",
+        "data": {
+          "data": [
+            {
+              "thumbnail": "/assets/images/Photos.png",
+              "title": "Photographs",
+              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&language=144&DATABASE=DESCRIPTION&REPORT=WEB_UNION_SUM_DESC&EXP=(A_IM_OPAC Yes and FORM_CL \"Graphic material\")"
+            },
+            {
+              "thumbnail": "/assets/images/Maps.png",
+              "title": "Maps",
+              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=DESCRIPTION&language=144&REPORT=WEB_UNION_SUM_DESC&EXP=A_IM_OPAC Yes and FORM_CL \"Cartographic material\""
+            },
+            {
+              "thumbnail": "/assets/images/Audio-Visual.png",
+              "title": "Audio/Video",
+              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=DESCRIPTION&language=144&REPORT=WEB_UNION_SUM_DESC&EXP=FORM_CL \"Sound recording\" or FORM_CL \"Moving images\" "
+            },
+            {
+              "thumbnail": "/assets/images/Artifacts.png",
+              "title": "Artifacts",
+              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(M_IM_OPAC Yes)"
+            },
+            {
+              "thumbnail": "/assets/images/Textual Records.png",
+              "title": "Textual Records",
+              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=DESCRIPTION&language=144&REPORT=WEB_UNION_SUM_DESC&EXP=FORM_CL \"Textual record\""
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  {
+    "component": "Section",
+    "data": {
+      "heading": "Recent Additions",
+      "description": "Recent additions from the Archives and Artifact Collections"
+    },
+    "children": [{ "component": "ImageMasonry", "data": {} }]
+  }
+]

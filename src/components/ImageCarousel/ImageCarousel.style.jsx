@@ -1,4 +1,4 @@
-import { Box,  Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import PropTypes from "prop-types";
 
@@ -10,7 +10,7 @@ export const CarouselText = styled(Typography)((description) => ({
   left: "12px",
   right: "12px",
   fontWeight: "600",
-  background: "#2a4408",
+  background: "#DA1A32",
   padding: "2px 4px",
 }));
 export const CarouselBox = styled(Box)(({ theme, dimension, thumbnail }) => {

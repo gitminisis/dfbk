@@ -20,7 +20,8 @@ import {
 import { Fade as Hamburger } from "hamburger-react";
 import { KeyboardArrowLeftOutlined } from "@mui/icons-material";
 const AppBar = (props) => {
-  const { links, logo, siteName, baseURL, active } = props;
+  const { links, logo, siteName, baseURL, active, headerURL } = props;
+  console.log(active);
   const [isScroll, setIsScroll] = useState(0);
   const [isClicked, setIsClicked] = useState(false);
   const [open, setOpen] = useState(false);
@@ -84,20 +85,21 @@ const AppBar = (props) => {
         <Container maxWidth={"true"}>
           <AppbarContainer maxWidth={"xl"}>
             <AppbarLogoBox
-              href={baseURL}
+              href={headerURL}
               underline="none"
               sx={{ color: "white" }}
               variant={"h5"}
+              target="_blank"
             >
               <div>
                 <AppbarLogo
                   component="img"
                   src={logo}
                   alt={`${siteName} logo`}
-                  onClick={(_) => (window.location = "https://www.surrey.ca/")}
+                  onClick={(_) => (window.location = headerURL)}
                 ></AppbarLogo>
               </div>
-              <strong>{siteName}</strong>
+              {/* <strong>{siteName}</strong> */}
             </AppbarLogoBox>
             <AppbarLinkBox
               sx={{
@@ -125,9 +127,9 @@ const AppBar = (props) => {
                   // onClick={(_) => (window.location = link.url)}
                   key={link.title}
                   href={link.url}
-                  variant={"h5"}
+                  variant="h5"
                 >
-                  <Typography variant="a">{link.title}</Typography>
+                  {link.title}
                 </AppbarLink>
               ))}
             </AppbarLinkBox>

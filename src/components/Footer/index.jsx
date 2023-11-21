@@ -1,11 +1,4 @@
-import {
-  Typography,
-  Link,
-  Box,
-  Container,
-  Grid,
-  Divider,
-} from "@mui/material";
+import { Typography, Link, Box, Container, Grid, Divider } from "@mui/material";
 import { PropTypes } from "prop-types";
 export const Copyright = (props) => {
   const { copyrightURL, siteName, url } = props;
@@ -15,12 +8,7 @@ export const Copyright = (props) => {
       component="div"
       style={{ textAlign: "center", color: "white" }}
     >
-      {"Copyright © "}
-      <Link color="inherit" variant="h6" component="a" href={url}>
-        {siteName}
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
+      {"© "} {new Date().getFullYear()} {siteName}. All Right Reserved.
     </Typography>
   );
 };
@@ -99,7 +87,11 @@ const Footer = (props) => {
           </Grid>
 
           <Grid item xs={12} md={3} sx={{ textAlign: "left" }}>
-            <img src={"https://i.imgur.com/KikZE4d.png"} alt="Surrey.ca" />
+            <img
+              style={{ maxWidth: "280px" }}
+              src={logo2}
+              alt="https://diefenbunker.ca/"
+            />
 
             <p>Software powered by:</p>
             <img
@@ -115,11 +107,17 @@ const Footer = (props) => {
           component="div"
           style={{ textAlign: "center", color: "white" }}
         >
-          Learn more about {" "}
-          <Link color="inherit" variant="h6" component="a" href={"https://www.surrey.ca/arts-culture/heritage"}>
-          Heritage in Surrey
+          Learn more about the{" "}
+          <Link
+            color="inherit"
+            variant="h6"
+            component="a"
+            href={
+              "https://diefenbunker.ca/?utm_source=minisis&&utm_medium=referral&&utm_campaign=online_listing"
+            }
+          >
+            Diefenbunker: Canada's Cold War Museum
           </Link>
-         
         </Typography>
         <Copyright url={baseURL} copyrightURL={baseURL} siteName={siteName} />
       </Container>
