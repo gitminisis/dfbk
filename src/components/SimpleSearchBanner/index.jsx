@@ -106,7 +106,7 @@ const Banner = (props) => {
                       borderTopLeftRadius: "0",
                       borderBottomLeftRadius: "0",
                     }}
-                    color="secondary"
+                    color="primary"
                     type="submit"
                     aria-label="search"
                     variant="contained"

@@ -1,5 +1,5 @@
+import { Divider, Grid, Typography } from "@mui/joy";
 import PropTypes from "prop-types";
-import { Typography, Divider, Box, Grid } from "@mui/joy";
 const index = (props) => {
   let { main, value, label, showMore } = props;
   let flattenArrayValue = _.flattenDeep(value).map((e) =>
@@ -30,34 +30,23 @@ const index = (props) => {
             color="primary"
             component="div"
             fontSize="lg"
-            level="h6"
+            level="p"
             fontWeight={700}
           >
             {label}
           </Typography>
         </Grid>
         <Grid xs sx={{ alignSelf: { xs: "start", md: "center" } }}>
-          {flattenArrayValue.map((v, i) =>
-            showMore === true ? (
-              <Typography
-                key={i}
-                level="h6"
-                component="div"
-                sx={{ display: "block" }}
-              >
-                {v}
-              </Typography>
-            ) : (
-              <Typography
-                key={i}
-                level="h6"
-                component="div"
-                sx={{ display: "block" }}
-              >
-                {v}
-              </Typography>
-            )
-          )}
+          {flattenArrayValue.map((v, i) => (
+            <Typography
+              key={i}
+              level="p"
+              component="div"
+              sx={{ display: "block" }}
+            >
+              {v}
+            </Typography>
+          ))}
         </Grid>
       </Grid>
     </>

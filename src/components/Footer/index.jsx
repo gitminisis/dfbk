@@ -4,7 +4,7 @@ export const Copyright = (props) => {
   const { copyrightURL, siteName, url } = props;
   return (
     <Typography
-      variant="h6"
+      variant="p"
       component="div"
       style={{ textAlign: "center", color: "white" }}
     >
@@ -103,14 +103,14 @@ const Footer = (props) => {
         </Grid>
         <Divider flexItem sx={{ marginTop: "40px", marginBottom: "20px" }} />
         <Typography
-          variant="h6"
+          variant="p"
           component="div"
           style={{ textAlign: "center", color: "white" }}
         >
           Learn more about the{" "}
           <Link
             color="inherit"
-            variant="h6"
+            variant="p"
             component="a"
             href={
               "https://diefenbunker.ca/?utm_source=minisis&&utm_medium=referral&&utm_campaign=online_listing"

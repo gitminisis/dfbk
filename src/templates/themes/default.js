@@ -20,7 +20,7 @@ const baseTheme = createTheme({
     },
   },
   typography: {
-    fontSize: 12,
+    fontSize: 14,
     h1: {
       fontSize: "4.5rem",
       fontFamily: "Futura",
@@ -46,6 +46,10 @@ const baseTheme = createTheme({
     h6: {
       fontWeight: 500,
       fontFamily: "Futura",
+    },
+    p: {
+      fontSize: "14px",
+      lineHeight: "1.75",
     },
   },
 });
