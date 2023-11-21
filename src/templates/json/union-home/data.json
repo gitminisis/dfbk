@@ -53,14 +53,5 @@
         }
       }
     ]
-  },
-
-  {
-    "component": "Section",
-    "data": {
-      "heading": "Recent Additions",
-      "description": "Recent additions from the Archives and Artifact Collections"
-    },
-    "children": [{ "component": "ImageMasonry", "data": {} }]
   }
 ]
