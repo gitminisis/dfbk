@@ -1,18 +1,17 @@
 import axios from "axios";
-import {
-  getTodayDate,
-  getTomorrowDate,
-  getDaysBeforeDate,
-  getXMLRecord,
-  deepSearch,
-  getKeyByValue,
-  getCurrentSession,
-} from "./functions";
 import copy from "copy-to-clipboard";
 import {
   MEDIA_THUMBNAIL_FIELD,
   SORT_REPORTS_BY_DATABASE,
 } from "../templates/API";
+import {
+  deepSearch,
+  getCurrentSession,
+  getDaysBeforeDate,
+  getKeyByValue,
+  getTomorrowDate,
+  getXMLRecord,
+} from "./functions";
 const DEFAULT_DETAIL_REPORT = "WEB_UNION_DETAIL";
 const WEB_DNS = "https://diefenbunkermuseum.minisisinc.com";
 const DEFAULT_SUM_REPORT = "WEB_UNION_SUM";

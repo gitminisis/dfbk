@@ -1,22 +1,22 @@
-import { useState } from "react";
-import PropTypes from "prop-types";
 import {
-  Typography,
   Box,
-  Modal,
-  ModalDialog,
   FormControl,
   FormLabel,
-  Stack,
-  ModalClose,
   Input,
+  Modal,
+  ModalClose,
+  ModalDialog,
+  Stack,
   Textarea,
+  Typography,
 } from "@mui/joy";
+import PropTypes from "prop-types";
+import { useState } from "react";
 
 import { Button } from "@mui/material";
-import { deepSearch, sendEmail } from "../../utils/functions";
-import { getEmailPermalink, getRecordPermalink } from "../../utils/record";
 import { useSnackbar } from "notistack";
+import { deepSearch, sendEmail } from "../../utils/functions";
+import { getEmailPermalink } from "../../utils/record";
 const ContactUsModalForm = (props) => {
   let { xml, description } = props;
   let sisn = deepSearch(xml, "sisn")[0];
@@ -131,7 +131,7 @@ const ContactUsModalForm = (props) => {
               <FormControl>
                 <FormLabel>Inquiry *</FormLabel>
                 <Textarea
-                  sx={{ height: "200px" }}
+                  sx={{ height: "200px", fontSize: "14px" }}
                   size="lg"
                   placeholder="Type something here ..."
                   defaultValue={text}
