@@ -3,7 +3,14 @@ import Component from "../../components/Component";
 import { PropTypes } from "prop-types";
 const GenericPage = (props) => {
   const { template } = props;
-  return <> {template.map((config) => Component(config))}</>;
+  return (
+    <>
+      {" "}
+      {template.map((config) => (
+        <div key={config}> {Component(config)}</div>
+      ))}
+    </>
+  );
 };
 
 GenericPage.propTypes = {

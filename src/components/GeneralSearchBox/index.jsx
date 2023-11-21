@@ -33,7 +33,6 @@ const GeneralSearchBox = (props) => {
   let database = deepSearch(xml, "database_name")[0];
   let databaseIndex = databaseList.findIndex((e) => e.application === database);
   const [index, setIndex] = React.useState(databaseIndex);
-
   let toSummary = backToSummary(xml);
   let session = deepSearch(xml, "session")[0];
   if (isSessionSearch()) {
@@ -87,7 +86,7 @@ const GeneralSearchBox = (props) => {
           <Grid item xs={12} md={12}>
             <form
               method="POST"
-              action={session + databaseList[index].searchURL}
+              // action={session + databaseList[index].searchURL}
             >
               <Input
                 id="simpleSearchCluster"
