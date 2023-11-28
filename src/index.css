@@ -23,6 +23,10 @@ h6 {
   text-transform: uppercase;
 }
 
+svg {
+  font-size: 18px;
+}
+
 /* h1{
   font-size: 32px;
 }

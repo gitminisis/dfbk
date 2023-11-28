@@ -36,7 +36,7 @@ const baseTheme = createTheme({
     },
     h4: {
       fontWeight: 700,
-      fontSize: "1.75rem",
+      fontSize: "10px",
       fontFamily: "Futura",
     },
     h5: {
