@@ -26,7 +26,7 @@ const baseTheme = createTheme({
       fontFamily: "Futura",
     },
     h2: {
-      fontSize: "180x",
+      fontSize: "18px",
       fontFamily: "Futura",
     },
     h3: {
