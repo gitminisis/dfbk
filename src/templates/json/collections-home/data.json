@@ -1,0 +1,30 @@
+[
+  {
+    "component": "SimpleSearchBanner",
+    "data": {
+      "heading": "EXPLORE OUR COLLECTIONS",
+      "searchURL": "/scripts/mwimain.dll?UNIONSEARCH&SIMPLE_EXP=Y&KEEP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS&language=144&REPORT=WEB_UNION_SUM_COL",
+      "bannerCarousel": ["/assets/images/artifact.jpg"]
+    }
+  },
+  {
+    "children": [
+      {
+        "data": { "recordIds": ["OEXID12", "OEXID11", "OEXID17", "OEXID16"] },
+        "component": "PhotoCoverCard"
+      }
+    ],
+    "component": "Section",
+    "data": { "heading": "Featured Collections" }
+  },
+  {
+    "component": "Section",
+    "data": { "heading": "Artifacts on Display" },
+    "children": [
+      {
+        "component": "MediaCard",
+        "data": { "recordIds": ["OEXID13", "OEXID14", "OEXID15", "OEXID18"] }
+      }
+    ]
+  }
+]
