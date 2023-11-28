@@ -59,7 +59,7 @@ const AppBar = (props) => {
               <Link
                 key={link.title}
                 href={link.url}
-                variant={"h5"}
+                variant={"h2"}
                 sx={{
                   color: "white",
                   mt: 2,
