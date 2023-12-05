@@ -93,7 +93,7 @@ const Banner = (props) => {
                 >
                   <InputBase
                     id="simpleSearchCluster"
-                    name="KEYWORD_CL"
+                    name="KEYWORD_CLUSTER"
                     style={{ height: "55px", fontSize: "1.2rem" }}
                     sx={{ ml: 1, flex: 1 }}
                     placeholder="Search By Keyword"

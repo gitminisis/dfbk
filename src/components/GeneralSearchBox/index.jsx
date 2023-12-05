@@ -95,7 +95,7 @@ const GeneralSearchBox = (props) => {
                 variant="soft"
                 sx={{ px: 0 }}
                 placeholder={placeholder}
-                name="KEYWORD_CL"
+                name="KEYWORD_CLUSTER"
                 endDecorator={
                   <>
                     <Divider orientation="vertical" />
