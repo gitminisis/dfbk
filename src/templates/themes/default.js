@@ -22,21 +22,21 @@ const baseTheme = createTheme({
   typography: {
     fontSize: '14px',
     h1: {
-      fontSize: "24px",
+      fontSize: "48px",
       fontFamily: "Futura",
     },
     h2: {
-      fontSize: "18px",
+      fontSize: "32px",
       fontFamily: "Futura",
     },
     h3: {
       fontWeight: 700,
-      fontSize: "13px",
+      fontSize: "24px",
       fontFamily: "Futura",
     },
     h4: {
       fontWeight: 700,
-      fontSize: "10px",
+      fontSize: "18px",
       fontFamily: "Futura",
     },
     h5: {
@@ -51,6 +51,11 @@ const baseTheme = createTheme({
       fontSize: '14px',
       lineHeight: "1.75",
     },
+
+    span: {
+      fontSize: '14px',
+    },
+
   },
 });
 

@@ -99,6 +99,11 @@ export const COLLECTIONS_GENERAL_DETAIL_FIELD = [{
         main: true,
     },
     {
+        name: "LEGAL_TITLE_FRN",
+        label: "Title",
+        main: true,
+    },
+    {
         name: "OBJ_DESCRIPTION",
         label: "Description",
         showMore: true,

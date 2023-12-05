@@ -198,7 +198,6 @@ export const TextBox = ({ children }) => {
           variant="body1"
           sx={{
             fontWeight: "bold",
-            fontSize: "1rem",
           }}
         >
           {children}

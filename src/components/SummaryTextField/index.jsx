@@ -11,12 +11,11 @@ const index = (props) => {
         onClick={(_) => (window.location = recordLink)}
         {...props}
         component="a"
-        variant="h3"
+        variant="h4"
         href={recordLink}
         sx={{
           color: "primary.main",
           fontWeight: "bold",
-          fontSize: "1.3rem",
           cursor: "pointer",
           marginBottom: "5px",
           "&:hover": {

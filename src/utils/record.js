@@ -227,7 +227,7 @@ export const getAllMedia = (record, database, mediaType = "image") => {
     return [];
   }
   let array = Array.isArray(mediaURL) ? mediaURL : [mediaURL];
-  return array.map((e) => e.replace(/\n/g, ""));
+  return array.map((e) => e.replace(/\n/g, "").toLowerCase().replace('diefenbunkermuseum','cams-diefenbunker'));
 };
 
 export const getAllImageCaptions = (record) => {

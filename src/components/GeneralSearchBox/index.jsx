@@ -81,7 +81,7 @@ const GeneralSearchBox = (props) => {
           style={{ width: "100%", maxWidth: "800px", margin: "20px auto" }}
         >
           <Grid item xs={12} style={{ textAlign: "center" }}>
-            <Typography variant="h1" sx={{ fontWeight: "bold" }}>
+            <Typography component="h1" variant="h2" sx={{ fontWeight: "bold" }}>
               {heading}
             </Typography>
           </Grid>

@@ -5,12 +5,16 @@ import { deepSearch } from "../../utils/functions";
 const index = (props) => {
   const { displayFields, recordData, recordLink, gridDisplay, xml } = props;
   let DisplayComponent = props.displayComponent;
+  const mainField = displayFields.filter(e => e.main);
+  // const mainFieldValue = mainField.map(e => deepSearch(recordData, e.name.toLowerCase()))
 
+  console.log(mainFieldValue)
   return displayFields.map((field) => {
     if (gridDisplay && field.gridDisplay === false) {
       return;
     }
     let defaultValue = field.defaultValue;
+
     let fieldValue =
       typeof defaultValue !== "undefined"
         ? [defaultValue]

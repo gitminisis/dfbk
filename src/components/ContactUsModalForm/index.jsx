@@ -76,13 +76,16 @@ const ContactUsModalForm = (props) => {
       <Button
         sx={{ width: "100%", maxWidth: "250px", margin: "16px auto" }}
         color="primary"
-        onClick={function () {
-          setOpen(true);
+        onClick={() => {
+          // the line below is to enable the modal form
+          // setOpen(true); 
+
+          window.open('https://diefenbunker.ca/collections/?utm_source=minisis&utm_medium=referral&utm_campaign=online_listing')
         }}
         size="md"
         variant="outlined"
       >
-        Contact Us
+          Contact Us
       </Button>
 
       <Modal onClose={() => setOpen(false)} open={open} data-aos="fade-down">
