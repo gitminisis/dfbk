@@ -28,5 +28,11 @@
     "label": "Description",
     "gridDisplay": false,
     "maxLength": 200
+  },
+  {
+    "name": "obj_descript_frn",
+    "label": "Description",
+    "gridDisplay": false,
+    "maxLength": 200
   }
 ]

@@ -109,6 +109,11 @@ export const COLLECTIONS_GENERAL_DETAIL_FIELD = [{
         showMore: true,
     },
     {
+        name: "obj_descript_frn",
+        label: "Description",
+        showMore: true,
+    },
+    {
         name: "EARLY",
         label: "Dates",
     },

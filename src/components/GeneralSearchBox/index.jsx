@@ -39,7 +39,6 @@ const GeneralSearchBox = (props) => {
     session = "/scripts/mwimain.dll";
   }
 
-  debugger;
   return (
     <Item elevation={6} sx={{ padding: "16px" }} className="back-top-anchor">
       <div>

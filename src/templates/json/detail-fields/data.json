@@ -7,6 +7,7 @@
       { "name": "LEGAL_TITLE", "label": "Title", "main": true },
       { "name": "LEGAL_TITLE_FRN", "label": "Title", "main": true },
       { "name": "OBJ_DESCRIPTION", "label": "Description", "showMore": true },
+      { "name": "obj_descript_frn", "label": "Description", "showMore": true },
       { "name": "EARLY", "label": "Dates" },
       { "name": "SUB_CLASSIFY", "label": "Sub-Classification" },
       { "name": "PRIMARY", "label": "Primary" },

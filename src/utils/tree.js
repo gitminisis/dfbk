@@ -153,7 +153,6 @@ export const getJSONTree = (session, database, id) => {
       if (isEmpty(tree)) {
         tree = clone(curNode);
       } else {
-        debugger;
         let cloneTree = clone(curNode);
         let curRefd = tree.id;
         let index = findIndex(cloneTree.children, {
@@ -212,7 +211,6 @@ export const appendChildrenToNode = (url, tree, id) => {
     // console.log(data, tree);
     let { curNode } = getCurNodeFromXML(data, id);
     let newTree = addChildrenToNode(tree, id, curNode.children);
-    debugger;
     return newTree;
   });
 };
