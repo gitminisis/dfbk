@@ -16,12 +16,12 @@ const DEFAULT_DETAIL_REPORT = "WEB_UNION_DETAIL";
 const WEB_DNS = "https://diefenbunkermuseum.minisisinc.com";
 const DEFAULT_SUM_REPORT = "WEB_UNION_SUM";
 const SUM_REPORT_BY_DATABASE = {
-  COLLECTIONS: "WEB_UNION_SUM_COL",
-  DESCRIPTION: "WEB_UNION_SUM_DESC",
+  COLLECTIONS_WEB: "WEB_UNION_SUM_COL",
+  DESCRIPTION_WEB: "WEB_UNION_SUM_DESC",
   PEOPLE_VAL: "WEB_PEOPLE_SUM",
 };
 export const TITLE_BY_DATABASE = {
-  COLLECTIONS: "legal_title",
+  COLLECTIONS_WEB: "legal_title",
   DESCRIPTION: "title",
 };
 export const FILTER_TITLE_BY_FIELD = {
@@ -52,9 +52,9 @@ export const getSearchRequestURL = (
 ) => {
   let url = `${
     session ? session : "/scripts/mwimain.dll"
-  }?UNIONSEARCH&SIMPLE_EXP=Y&KEEP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=${application}&DATABASE=${database}&language=144&REPORT=${
+    }?UNIONSEARCH&SIMPLE_EXP=Y&KEEP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=${application}&DATABASE=${database}&language=144&REPORT=${
     report || SUM_REPORT_BY_DATABASE[database]
-  }&EXP=${expression}`;
+    }&EXP=${expression}`;
   return url;
 };
 
@@ -66,7 +66,7 @@ export const getSimpleSearchRequestURL = (
 ) => {
   let url = `${
     session ? session : "/scripts/mwimain.dll"
-  }?SEARCH&SIMPLE_EXP=Y&KEEP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=${application}&language=144&REPORT=${report}&EXP=${expression}`;
+    }?SEARCH&SIMPLE_EXP=Y&KEEP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=${application}&language=144&REPORT=${report}&EXP=${expression}`;
   return url;
 };
 
@@ -86,7 +86,7 @@ export const getUnionSearchRequestURL = (
 ) => {
   let url = `${
     session ? session : "/scripts/mwimain.dll"
-  }?UNIONSEARCH&SIMPLE_EXP=Y&KEEP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=${application}&language=144&REPORT=${report}&EXP=${expression}`;
+    }?UNIONSEARCH&SIMPLE_EXP=Y&KEEP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=${application}&language=144&REPORT=${report}&EXP=${expression}`;
   return url;
 };
 
@@ -227,7 +227,7 @@ export const getAllMedia = (record, database, mediaType = "image") => {
     return [];
   }
   let array = Array.isArray(mediaURL) ? mediaURL : [mediaURL];
-  return array.map((e) => e.replace(/\n/g, "").toLowerCase().replace('diefenbunkermuseum','cams-diefenbunker'));
+  return array.map((e) => e.replace(/\n/g, "").toLowerCase().replace('diefenbunkermuseum', 'cams-diefenbunker'));
 };
 
 export const getAllImageCaptions = (record) => {
@@ -314,7 +314,7 @@ export const viewBookmark = (xml) => {
   window.location = `${url}?SHOWORDERLIST&COOKIE=BOOKMARK&NEW=Y`;
 };
 
-export const removeBookmarkRecord = () => {};
+export const removeBookmarkRecord = () => { };
 
 export const removeAllBookmarkRecord = () => {
   document.cookie = "BOOKMARK=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
