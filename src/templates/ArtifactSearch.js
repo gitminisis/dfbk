@@ -4,7 +4,7 @@ const ArtifactSearch = [
   {
     component: "Layout",
     data: {
-      active: "COLLECTIONS",
+      active: "COLLECTIONS_WEB",
     },
     children: [...json],
   },

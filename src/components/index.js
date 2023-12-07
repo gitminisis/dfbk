@@ -27,3 +27,4 @@ export { default as SummaryOnlineExhibitionLayout } from "./SummaryOnlineExhibit
 export { default as RecordToURLField } from "./RecordToURLField";
 export { default as EmptyComponent } from "./EmptyComponent";
 export { default as MessageModal } from "./MessageModal";
+export { default as SummaryNoRecord } from "./SummaryNoRecord";

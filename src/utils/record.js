@@ -16,16 +16,16 @@ const DEFAULT_DETAIL_REPORT = "WEB_UNION_DETAIL";
 const WEB_DNS = "https://diefenbunkermuseum.minisisinc.com";
 const DEFAULT_SUM_REPORT = "WEB_UNION_SUM";
 const SUM_REPORT_BY_DATABASE = {
-  COLLECTIONS: "WEB_UNION_SUM_COL",
-  DESCRIPTION: "WEB_UNION_SUM_DESC",
+  COLLECTIONS_WEB: "WEB_UNION_SUM_COL",
+  DESCRIPTION_WEB: "WEB_UNION_SUM_DESC",
   PEOPLE_VAL: "WEB_PEOPLE_SUM",
 };
 export const TITLE_BY_DATABASE = {
-  COLLECTIONS: "legal_title",
+  COLLECTIONS_WEB: "legal_title",
   DESCRIPTION: "title",
 };
 export const FILTER_TITLE_BY_FIELD = {
-  $UNION_DBNAME: "Collections",
+  $UNION_DBNAME: "COLLECTIONS_WEB",
   MEDIA_CL: "Media Type",
   FORM: "Type",
   DATE_CR_INC: "Date",
@@ -52,9 +52,9 @@ export const getSearchRequestURL = (
 ) => {
   let url = `${
     session ? session : "/scripts/mwimain.dll"
-  }?UNIONSEARCH&SIMPLE_EXP=Y&KEEP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=${application}&DATABASE=${database}&language=144&REPORT=${
+    }?UNIONSEARCH&SIMPLE_EXP=Y&KEEP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=${application}&DATABASE=${database}&language=144&REPORT=${
     report || SUM_REPORT_BY_DATABASE[database]
-  }&EXP=${expression}`;
+    }&EXP=${expression}`;
   return url;
 };
 
@@ -66,7 +66,7 @@ export const getSimpleSearchRequestURL = (
 ) => {
   let url = `${
     session ? session : "/scripts/mwimain.dll"
-  }?SEARCH&SIMPLE_EXP=Y&KEEP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=${application}&language=144&REPORT=${report}&EXP=${expression}`;
+    }?SEARCH&SIMPLE_EXP=Y&KEEP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=${application}&language=144&REPORT=${report}&EXP=${expression}`;
   return url;
 };
 
@@ -86,7 +86,7 @@ export const getUnionSearchRequestURL = (
 ) => {
   let url = `${
     session ? session : "/scripts/mwimain.dll"
-  }?UNIONSEARCH&SIMPLE_EXP=Y&KEEP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=${application}&language=144&REPORT=${report}&EXP=${expression}`;
+    }?UNIONSEARCH&SIMPLE_EXP=Y&KEEP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=${application}&language=144&REPORT=${report}&EXP=${expression}`;
   return url;
 };
 
@@ -123,7 +123,7 @@ export const getRecendAdditions = (session = "/scripts/mwimain.dll") => {
   }
   let searchingField = [
     {
-      database: "COLLECTIONS",
+      database: "COLLECTIONS_WEB",
       date: "LAST_MODIFIED_TM",
       media: "M_IM_ACCESS",
       report: "WEB_UNION_SUM_COL",
@@ -151,7 +151,7 @@ export const getRecendAdditions = (session = "/scripts/mwimain.dll") => {
   };
   let searchURL = searchingField.map((e) => {
     let exp = `${e.date} > "${low}" and ${e.mediaReady} "Yes"`;
-    let url = `${session}?UNIONSEARCH&SIMPLE_EXP=Y&SHOWSINGLE=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&language=144&REPORT=WEB_UNION_SUM&EXP=${exp}&database=${e.database}`;
+    let url = `${session}?UNIONSEARCH&SIMPLE_EXP=Y&SHOWSINGLE=Y&KEEP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&language=144&REPORT=WEB_UNION_SUM&EXP=${exp}&database=${e.database}`;
     return url;
   });
 
@@ -227,7 +227,7 @@ export const getAllMedia = (record, database, mediaType = "image") => {
     return [];
   }
   let array = Array.isArray(mediaURL) ? mediaURL : [mediaURL];
-  return array.map((e) => e.replace(/\n/g, ""));
+  return array.map((e) => e.replace(/\n/g, "").toLowerCase().replace('diefenbunkermuseum', 'cams-diefenbunker'));
 };
 
 export const getAllImageCaptions = (record) => {
@@ -314,7 +314,7 @@ export const viewBookmark = (xml) => {
   window.location = `${url}?SHOWORDERLIST&COOKIE=BOOKMARK&NEW=Y`;
 };
 
-export const removeBookmarkRecord = () => {};
+export const removeBookmarkRecord = () => { };
 
 export const removeAllBookmarkRecord = () => {
   document.cookie = "BOOKMARK=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
@@ -325,7 +325,7 @@ export const getRecordPermalink = (
   database,
   report = DEFAULT_DETAIL_REPORT
 ) => {
-  let url = `${WEB_DNS}/scripts/mwimain.dll/144/${database}/${report}?sessionsearch&exp=SISN ${sisn}`;
+  let url = `${WEB_DNS}/scripts/mwimain.dll/144/${database}/${report}?sessionsearch&exp=SISN+${sisn}`;
   return url;
 };
 
@@ -386,7 +386,7 @@ export const performJumpSearch = (url, fn) => {
 };
 export const fetchJSONRecord = (session, database, sisn = [], fn) => {
   let searchExpression = sisn.map((e) => `SISN ${e}`).join(" or ");
-  let url = `${session}/scripts/mwimain.dll?SEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=${database}&language=144&REPORT=${SUM_REPORT_BY_DATABASE[database]}&EXP=${searchExpression}`;
+  let url = `${session}/scripts/mwimain.dll?SEARCH&SIMPLE_EXP=Y&KEEP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=${database}&language=144&REPORT=${SUM_REPORT_BY_DATABASE[database]}&EXP=${searchExpression}`;
   return axios.get(url).then((res) => {
     let { data } = res;
     let dom = new DOMParser().parseFromString(data, "text/html");
@@ -429,3 +429,5 @@ export const getCurrentPageFromPagination = (pagination) => {
 export const getPaginationLength = (pagination) => {
   return pagination.filter((e) => e["__text"] !== "Next").length;
 };
+
+

@@ -14,9 +14,9 @@ const Summary = [
       {
         component: "SummaryLayout",
         data: {
-          application: "COLLECTIONS",
+          application: "COLLECTIONS_WEB",
           generalSearchBox: {
-            application: "COLLECTIONS",
+            application: "COLLECTIONS_WEB",
             breadcrumbs: ["Summary"],
             heading: "Explore our collections",
             placeholder: "Search By Keyword",
@@ -24,7 +24,7 @@ const Summary = [
             helpText: {
               link: "https://diefenbunker.ca/collections/?utm_source=minisis&utm_medium=referral&utm_campaign=online_listing",
               description:
-                "Didn’t find what you’re looking for? Please try another search term or contact the Diefenbunker team.",
+                "Didn't find what you're looking for? Please try another search term or contact the Diefenbunker team.",
             },
           },
           sortOptions: true,
@@ -33,7 +33,7 @@ const Summary = [
           thumbnailData: MEDIA_THUMBNAIL_FIELD,
           displayField: [
             {
-              database: "COLLECTIONS",
+              database: "COLLECTIONS_WEB",
               fields: COLLECTIONS_SUMMARY_FIELD,
             },
           ],

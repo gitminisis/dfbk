@@ -20,23 +20,23 @@ const baseTheme = createTheme({
     },
   },
   typography: {
-    fontSize: 14,
+    fontSize: '14px',
     h1: {
-      fontSize: "4.5rem",
+      fontSize: "48px",
       fontFamily: "Futura",
     },
     h2: {
-      fontSize: "2.5rem",
+      fontSize: "32px",
       fontFamily: "Futura",
     },
     h3: {
       fontWeight: 700,
-      fontSize: "2.2rem",
+      fontSize: "24px",
       fontFamily: "Futura",
     },
     h4: {
       fontWeight: 700,
-      fontSize: "1.75rem",
+      fontSize: "18px",
       fontFamily: "Futura",
     },
     h5: {
@@ -48,9 +48,14 @@ const baseTheme = createTheme({
       fontFamily: "Futura",
     },
     p: {
-      fontSize: "14px",
+      fontSize: '14px',
       lineHeight: "1.75",
     },
+
+    span: {
+      fontSize: '14px',
+    },
+
   },
 });
 

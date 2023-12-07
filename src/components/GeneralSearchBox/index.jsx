@@ -38,6 +38,7 @@ const GeneralSearchBox = (props) => {
   if (isSessionSearch()) {
     session = "/scripts/mwimain.dll";
   }
+
   return (
     <Item elevation={6} sx={{ padding: "16px" }} className="back-top-anchor">
       <div>
@@ -79,21 +80,21 @@ const GeneralSearchBox = (props) => {
           style={{ width: "100%", maxWidth: "800px", margin: "20px auto" }}
         >
           <Grid item xs={12} style={{ textAlign: "center" }}>
-            <Typography variant="h2" sx={{ fontWeight: "bold" }}>
+            <Typography component="h1" variant="h2" sx={{ fontWeight: "bold" }}>
               {heading}
             </Typography>
-          </Grid>{" "}
+          </Grid>
           <Grid item xs={12} md={12}>
             <form
               method="POST"
-              // action={session + databaseList[index].searchURL}
+              action={session + databaseList[index].searchURL}
             >
               <Input
                 id="simpleSearchCluster"
                 variant="soft"
                 sx={{ px: 0 }}
                 placeholder={placeholder}
-                name="KEYWORD_CL"
+                name="KEYWORD_CLUSTER"
                 endDecorator={
                   <>
                     <Divider orientation="vertical" />

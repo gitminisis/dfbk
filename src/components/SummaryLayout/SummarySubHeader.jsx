@@ -29,8 +29,8 @@ export default function SummarySubHeader(props) {
       >
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <Typography
-            variant="body1"
-            sx={{ fontWeight: "bold", fontSize: "1.2rem" }}
+            variant="p"
+            sx={{ fontWeight: "bold", fonWegith:"18px" }}
           >
             {statement
               ? statement

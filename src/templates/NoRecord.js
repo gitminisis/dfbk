@@ -1,24 +1,34 @@
+
+import {
+
+  GENERAL_SEARCHBOX_DBLIST,
+} from "./API";
+
 const NoRecord = [
   {
     component: "Layout",
     children: [
       {
-        component: "SimpleSearchBanner",
+        component: "SummaryLayout",
         data: {
-          searchURL:
-            "/scripts/mwimain.dll?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&language=144&REPORT=WEB_UNION_SUM",
-
-          heading: "No results have been found",
-          description: "Sorry, we couldn't find any records for your search",
-          bannerCarousel: [
-            "/assets/images/Union%20Background%201.png",
-            "/assets/images/Union%20Background%202.png",
-            "/assets/images/Union%20Background%203.png",
-            "/assets/images/Union%20Background%204.png",
-            "/assets/images/Union%20Background%205.png",
-            "/assets/images/Union%20Background%206.png",
-            "/assets/images/Union%20Background%207.png",
-          ],
+          application: "UNION_VIEW",
+          generalSearchBox: {
+            application: "UNION_VIEW",
+            breadcrumbs: ["Summary"],
+            heading: "Explore our collections",
+            placeholder: "Search By Keyword",
+            databaseList: GENERAL_SEARCHBOX_DBLIST,
+            helpText: {
+              link: "https://diefenbunker.ca/collections/?utm_source=minisis&utm_medium=referral&utm_campaign=online_listing",
+              description:
+                "Didn't find what you're looking for? Please try another search term or contact the Diefenbunker team.",
+            },
+          },
+          sortOptions: true,
+          filter: [],
+          defaultView: "list",
+       
+        
         },
       },
     ],

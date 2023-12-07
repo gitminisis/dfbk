@@ -93,8 +93,8 @@ const Banner = (props) => {
                 >
                   <InputBase
                     id="simpleSearchCluster"
-                    name="KEYWORD_CL"
-                    style={{ height: "55px", fontSize: "1.2rem" }}
+                    name="KEYWORD_CLUSTER"
+                    style={{ height: "100%", fontSize: "1.2rem" }}
                     sx={{ ml: 1, flex: 1 }}
                     placeholder="Search By Keyword"
                     inputProps={{ "aria-label": "Search By Keyword" }}

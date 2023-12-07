@@ -9,6 +9,8 @@ const envKeys = Object.keys(env).reduce((prev, next) => {
   return prev;
 }, {});
 
+console.log(envKeys)
+
 module.exports = smp.wrap({
   entry: ["./src/index"],
   plugins: [

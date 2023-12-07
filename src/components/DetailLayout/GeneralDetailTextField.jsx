@@ -7,8 +7,8 @@ const index = (props) => {
   );
   if (main) {
     return (
-      <Typography {...props} gutterBottom level="h3" sx={{ pb: 2 }}>
-        {value.join(", ")}
+      <Typography {...props} gutterBottom level="h3" sx={{ pb: 2, color:'primary.main' }}>
+        {value.map((e, i) => <span key={e}> {i !== 0 && <span>|</span>} {e} </span>)}
       </Typography>
     );
   }
@@ -44,7 +44,8 @@ const index = (props) => {
               component="div"
               sx={{ display: "block" }}
             >
-              {v}
+            {v}
+              {/* {i !== 0 && <span style={{color:"#DA1A32"}}>|</span>} {v} */}
             </Typography>
           ))}
         </Grid>

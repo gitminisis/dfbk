@@ -5,7 +5,6 @@ const GenericPage = (props) => {
   const { template } = props;
   return (
     <>
-      {" "}
       {template.map((config) => (
         <div key={config}> {Component(config)}</div>
       ))}

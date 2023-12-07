@@ -53,7 +53,6 @@ export const SubmitSearch = styled(Button)((_) => ({
   borderRadius: 0,
 }));
 export const SiteHeading = styled(Typography)(({ theme }) => ({
-  fontSize: "4.5rem",
   marginBottom: "20px",
   color: "white",
   fontWeight: "900",

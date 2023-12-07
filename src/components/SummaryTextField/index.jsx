@@ -11,12 +11,11 @@ const index = (props) => {
         onClick={(_) => (window.location = recordLink)}
         {...props}
         component="a"
-        variant="h3"
+        variant="h4"
         href={recordLink}
         sx={{
           color: "primary.main",
           fontWeight: "bold",
-          fontSize: "1.3rem",
           cursor: "pointer",
           marginBottom: "5px",
           "&:hover": {
@@ -25,14 +24,14 @@ const index = (props) => {
           },
         }}
       >
-        {string}
+        {value.map((e, i) => <span key={e}> {i !== 0 && <span>|</span>} {e} </span>)}
       </Typography>
     );
   }
-
+console.log(value)
   return (
     <Typography variant="subtitle1" color="text.primary" component="div">
-      <strong>{label}</strong>: {string}
+      <strong>{label}</strong>:  {value.map((e, i) => <span key={e}> {i !== 0 && <span style={{color:"#DA1A32"}}>|</span>} {e} </span>)}
     </Typography>
   );
 };

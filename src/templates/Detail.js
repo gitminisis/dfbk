@@ -1,6 +1,5 @@
 import {
-  DESCRIPTION_GENERAL_DETAIL_FIELD,
-  COLLECTIONS_GENERAL_DETAIL_FIELD,
+
   DESCRIPTION_OVERVIEW_DETAIL_FIELD,
   COLLECTIONS_OVERVIEW_DETAIL_FIELD,
   COLLECTIONS_CHENHALL_DETAIL_FIELD,
@@ -26,7 +25,7 @@ const Detail = [
             helpText: {
               link: "https://diefenbunker.ca/collections/?utm_source=minisis&utm_medium=referral&utm_campaign=online_listing",
               description:
-                "Didn’t find what you’re looking for? Please try another search term or contact the Diefenbunker team.",
+                "Didn't find what you're looking for? Please try another search term or contact the Diefenbunker team.",
             },
           },
           generalSection: {
@@ -42,7 +41,7 @@ const Detail = [
               {
                 component: "ContactUsModalForm",
                 data: {
-                  displayDatabase: ["DESCRIPTION", "COLLECTIONS"],
+                  displayDatabase: ["DESCRIPTION", "COLLECTIONS_WEB"],
                   description:
                     "We're always looking to improve our records. If you have information about a record or think we've made a mistake, contact us. You can also order a copy of the record by clicking the button below.",
                 },
@@ -52,7 +51,7 @@ const Detail = [
           detailSection: {
             displayFields: [
               {
-                database: "COLLECTIONS",
+                database: "COLLECTIONS_WEB",
                 section: [
                   {
                     title: "Overview",

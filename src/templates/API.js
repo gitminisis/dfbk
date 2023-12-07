@@ -99,7 +99,17 @@ export const COLLECTIONS_GENERAL_DETAIL_FIELD = [{
         main: true,
     },
     {
+        name: "LEGAL_TITLE_FRN",
+        label: "Title",
+        main: true,
+    },
+    {
         name: "OBJ_DESCRIPTION",
+        label: "Description",
+        showMore: true,
+    },
+    {
+        name: "obj_descript_frn",
         label: "Description",
         showMore: true,
     },
@@ -190,7 +200,7 @@ export const COLLECTIONS_CHENHALL_DETAIL_FIELD = [{
 ];
 
 export const MEDIA_THUMBNAIL_FIELD = [{
-        database: "COLLECTIONS",
+        database: "COLLECTIONS_WEB",
         image: "m_im_access_link",
         audio: "m_ad_access_link",
         video: "m_vd_access_link",

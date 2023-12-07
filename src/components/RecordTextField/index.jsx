@@ -6,15 +6,28 @@ const index = (props) => {
   const { displayFields, recordData, recordLink, gridDisplay, xml } = props;
   let DisplayComponent = props.displayComponent;
 
+
+
+
   return displayFields.map((field) => {
+    if (field.duplicate) return;
     if (gridDisplay && field.gridDisplay === false) {
       return;
     }
     let defaultValue = field.defaultValue;
-    let fieldValue =
-      typeof defaultValue !== "undefined"
-        ? [defaultValue]
-        : deepSearch(recordData, field.name.toLowerCase());
+    let sameLabelField = displayFields.filter((e, i) => e.label === field.label);
+    let fieldValue;
+    if (sameLabelField.length > 1) {
+      displayFields.filter((e, i) => e.label === field.label).filter((e, i) => i !== 0).forEach(e => { e.duplicate = true })
+      fieldValue = sameLabelField.map(e => deepSearch(recordData, e.name.toLowerCase())[0])
+    }
+    else {
+      fieldValue =
+        typeof defaultValue !== "undefined"
+          ? [defaultValue]
+          : deepSearch(recordData, field.name.toLowerCase());
+    }
+
 
     if (fieldValue.length === 0) {
       return;

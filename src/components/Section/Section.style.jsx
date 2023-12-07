@@ -21,7 +21,6 @@ export const SectionContainer = styled(Container)(
 );
 export const SubHeading = styled(Typography)((_) => ({
   opacity: "1",
-  fontSize: "2.5rem",
   textTransform: "uppercase",
   fontWeight: "600",
   marginTop:'60px'

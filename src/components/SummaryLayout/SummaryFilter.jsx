@@ -52,7 +52,7 @@ const FieldFilter = (props) => {
             if (item.item_value === "ONLINE_EXHIBITION_VIEW") {
               return null;
             }
-            if (item.item_value === "COLLECTIONS") {
+            if (item.item_value === "COLLECTIONS_WEB") {
               item.item_value = "Artifact";
             }
             if (item.item_value === "DESCRIPTION") {
@@ -198,7 +198,6 @@ export const TextBox = ({ children }) => {
           variant="body1"
           sx={{
             fontWeight: "bold",
-            fontSize: "1rem",
           }}
         >
           {children}

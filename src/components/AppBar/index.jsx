@@ -59,7 +59,7 @@ const AppBar = (props) => {
               <Link
                 key={link.title}
                 href={link.url}
-                variant={"h5"}
+                variant={"h2"}
                 sx={{
                   color: "white",
                   mt: 2,
@@ -103,7 +103,7 @@ const AppBar = (props) => {
             </AppbarLogoBox>
             <AppbarLinkBox
               sx={{
-                display: { xs: "flex", md: "none" },
+                display: { xs: "flex", md: "none", color:"black"},
                 justifyContent: "end",
               }}
             >
@@ -127,7 +127,7 @@ const AppBar = (props) => {
                   // onClick={(_) => (window.location = link.url)}
                   key={link.title}
                   href={link.url}
-                  variant="h5"
+                  variant="h4"
                 >
                   {link.title}
                 </AppbarLink>
@@ -135,11 +135,12 @@ const AppBar = (props) => {
             </AppbarLinkBox>
 
             <Box
-              sx={{ display: { xs: "flex", md: "none" } }}
+              sx={{ display: { xs: "flex", md: "none", } }}
               style={{ alignItems: "center" }}
             >
               <div
                 id="nav-icon4"
+                style={{ color: "#DA1A32" }}
                 className={isClicked ? "open" : ""}
                 onClick={(_) => setIsClicked(!isClicked)}
               >

@@ -5,6 +5,11 @@
     "main": true
   },
   {
+    "name": "LEGAL_TITLE_FRN",
+    "label": "Title",
+    "main": true
+  },
+  {
     "name": "EARLY",
     "label": "Dates",
     "gridDisplay": false
@@ -20,6 +25,12 @@
   },
   {
     "name": "OBJ_DESCRIPTION",
+    "label": "Description",
+    "gridDisplay": false,
+    "maxLength": 200
+  },
+  {
+    "name": "obj_descript_frn",
     "label": "Description",
     "gridDisplay": false,
     "maxLength": 200

@@ -3,7 +3,7 @@
     "component": "SimpleSearchBanner",
     "data": {
       "heading": "EXPLORE OUR COLLECTIONS",
-      "searchURL": "/scripts/mwimain.dll?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS&language=144&REPORT=WEB_UNION_SUM_COL",
+      "searchURL": "/scripts/mwimain.dll?UNIONSEARCH&SIMPLE_EXP=Y&KEEP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS&language=144&REPORT=WEB_UNION_SUM_COL",
       "bannerCarousel": ["/assets/images/artifact.jpg"]
     }
   },
