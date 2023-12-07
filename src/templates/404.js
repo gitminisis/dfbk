@@ -10,13 +10,7 @@ const Home = [
           heading: "Page Not Found",
           description: "The page you are looking for does not exist",
           bannerCarousel: [
-            "/assets/images/Union%20Background%201.png",
-            "/assets/images/Union%20Background%202.png",
-            "/assets/images/Union%20Background%203.png",
-            "/assets/images/Union%20Background%204.png",
-            "/assets/images/Union%20Background%205.png",
-            "/assets/images/Union%20Background%206.png",
-            "/assets/images/Union%20Background%207.png",
+            "/assets/images/artifact.jpg"
           ],
         },
       },

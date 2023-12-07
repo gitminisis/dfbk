@@ -10,13 +10,7 @@ const NoSession = [
           heading: "No active session",
           description: "Please start a new search",
           bannerCarousel: [
-            "/assets/images/Union%20Background%201.png",
-            "/assets/images/Union%20Background%202.png",
-            "/assets/images/Union%20Background%203.png",
-            "/assets/images/Union%20Background%204.png",
-            "/assets/images/Union%20Background%205.png",
-            "/assets/images/Union%20Background%206.png",
-            "/assets/images/Union%20Background%207.png",
+            "/assets/images/artifact.jpg"
           ],
         },
       },

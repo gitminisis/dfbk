@@ -11,13 +11,7 @@ const NoRecord = [
           heading: "No results have been found",
           description: "Sorry, we couldn't find any records for your search",
           bannerCarousel: [
-            "/assets/images/Union%20Background%201.png",
-            "/assets/images/Union%20Background%202.png",
-            "/assets/images/Union%20Background%203.png",
-            "/assets/images/Union%20Background%204.png",
-            "/assets/images/Union%20Background%205.png",
-            "/assets/images/Union%20Background%206.png",
-            "/assets/images/Union%20Background%207.png",
+            "/assets/images/artifact.jpg"
           ],
         },
       },
