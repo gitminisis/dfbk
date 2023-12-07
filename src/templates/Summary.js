@@ -22,7 +22,7 @@ const Summary = [
             helpText: {
               link: "https://diefenbunker.ca/collections/?utm_source=minisis&utm_medium=referral&utm_campaign=online_listing",
               description:
-                "Didn’t find what you’re looking for? Please try another search term or contact the Diefenbunker team.",
+                "Didn't find what you're looking for? Please try another search term or contact the Diefenbunker team.",
             },
           },
           sortOptions: true,
