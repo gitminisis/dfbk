@@ -10,6 +10,7 @@ import Detail from "./Detail";
 import SummaryBookmark from "./SummaryBookmark";
 import NoSession from "./NoSession";
 import NoRecord from "./NoRecord";
+import SummaryNoRecord from "./SummaryNoRecord";
 import NoBookmark from "./NoBookmark";
 import SummaryOnlineExhibition from "./SummaryOnlineExhibition";
 import Admin from "./Admin";
@@ -62,7 +63,7 @@ const Routes = [
   },
   {
     path: "no-record",
-    template: NoRecord,
+    template: SummaryNoRecord,
   },
   {
     path: "no-bookmark",

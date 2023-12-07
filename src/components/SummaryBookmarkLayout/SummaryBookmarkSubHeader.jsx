@@ -26,7 +26,7 @@ export default function SummaryBookmarkSubHeader(props) {
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <Typography
             variant="body1"
-            sx={{ fontWeight: "bold", fontSize: "1.2rem" }}
+            sx={{ fontWeight: "bold",  }}
           >
             {`${totalRecord} bookmarked item(s)`}
           </Typography>
