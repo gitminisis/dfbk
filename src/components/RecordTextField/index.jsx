@@ -18,7 +18,6 @@ const index = (props) => {
     let sameLabelField = displayFields.filter((e, i) => e.label === field.label);
     let fieldValue;
     if (sameLabelField.length > 1) {
-      debugger;
       displayFields.filter((e, i) => e.label === field.label).filter((e, i) => i !== 0).forEach(e => { e.duplicate = true })
       fieldValue = sameLabelField.map(e => deepSearch(recordData, e.name.toLowerCase())[0])
     }

@@ -25,49 +25,49 @@
         "data": {
           "data": [
             {
-              "thumbnail": "/assets/images/Photos.png",
-              "title": "Built Environment Artifacts",
+              "thumbnail": "/assets/images/building.png",
+              "title": "Building Components",
               "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&language=144&DATABASE=COLLECTIONS_WEB&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"1: Built Environment Artifacts\")"
             },
             {
-              "thumbnail": "/assets/images/Maps.png",
+              "thumbnail": "/assets/images/furnishing.png",
               "title": "Furnishings",
               "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"2: Furnishings\")"
             },
             {
-              "thumbnail": "/assets/images/Audio-Visual.png",
-              "title": "Personal Artifacts",
+              "thumbnail": "/assets/images/clothing.png",
+              "title": "Clothing & Personal Care",
               "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"3: Personal Artifacts\")"
             },
             {
-              "thumbnail": "/assets/images/Artifacts.png",
-              "title": "Materials",
-              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"4: Tools & Equipment for Materials\")"
+              "thumbnail": "/assets/images/mat.png",
+              "title": "Materials, Tools & Equipment",
+              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"4: Tools %26 Equipment for Materials\")"
             },
             {
-              "thumbnail": "/assets/images/Textual Records.png",
+              "thumbnail": "/assets/images/st.png",
               "title": "Science & Technology",
-              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"5: Tools & Equipment for Science & Technology\")"
+              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"5: Tools %26 Equipment for Science %26 Technology\")"
             },
             {
-              "thumbnail": "/assets/images/Textual Records.png",
-              "title": "Communication",
-              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"6: Tools & Equipment for Communication\")"
+              "thumbnail": "/assets/images/comm.png",
+              "title": "Communications",
+              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"6: Tools %26 Equipment for Communication\")"
             }, {
-              "thumbnail": "/assets/images/Maps.png",
-              "title": "Distribution & Transportation Artifacts",
-              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"7: Distribution & Transportation Artifacts\")"
+              "thumbnail": "/assets/images/Transportation.png",
+              "title": "Transportation",
+              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"7: Distribution %26 Transportation Artifacts\")"
             }, {
-              "thumbnail": "/assets/images/Maps.png",
-              "title": "Communication Artifacts",
+              "thumbnail": "/assets/images/art.png",
+              "title": "Arts & Printed Media",
               "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"8: Communication Artifacts\")"
             }, {
-              "thumbnail": "/assets/images/Maps.png",
-              "title": "Recreational Artifacts",
+              "thumbnail": "/assets/images/rec.png",
+              "title": "Recreation",
               "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"9: Recreational Artifacts\")"
             }, {
-              "thumbnail": "/assets/images/Maps.png",
-              "title": "Unclassifiable Artifacts",
+              "thumbnail": "/assets/images/other.png",
+              "title": "Other",
               "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"10: Unclassifiable Artifacts\")"
             }
           ]
