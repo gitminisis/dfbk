@@ -1,6 +1,6 @@
 const Admin = [
-  {
-    component: "EmptyComponent",
-  },
-];
-export default Admin;
+	{
+		component: 'EmptyComponent',
+	},
+]
+export default Admin

@@ -1,78 +1,82 @@
 [
-  {
-    "data": {
-      "bannerCarousel": ["/assets/images/artifact.jpg"],
-      "heading": "EXPLORE OUR COLLECTIONS",
+	{
+		"data": {
+			"bannerCarousel": ["/assets/images/artifact.jpg"],
+			"heading": "EXPLORE OUR COLLECTIONS",
 
-      "searchURL": "/scripts/mwimain.dll?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&KEEP=Y&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM"
-    },
-    "component": "SimpleSearchBanner"
-  },
-  {
-    "component": "Section",
-    "data": {
-      "heading": "About us",
-      "divider": true,
-      "description": "The Diefenbunker aims to increase, throughout Canada and the world, interest in and a critical understanding of the Cold War, by preserving the Diefenbunker as a national historic site, and operating a Cold War museum. The museum holds over 11,000 3-D and 2-D artifacts relevant to Canada’s Cold War history, spanning between 1945 and 1991. Search through this site to learn more about specific items in the Diefenbunker’s collections and archives"
-    }
-  },
-  {
-    "component": "Section",
-    "data": { "heading": "Browse by category" },
-    "children": [
-      {
-        "component": "ImageCarousel",
-        "data": {
-          "data": [
-            {
-              "thumbnail": "/assets/images/building.png",
-              "title": "Building Components",
-              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&language=144&DATABASE=COLLECTIONS_WEB&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"1: Built Environment Artifacts\")"
-            },
-            {
-              "thumbnail": "/assets/images/furnishing.png",
-              "title": "Furnishings",
-              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"2: Furnishings\")"
-            },
-            {
-              "thumbnail": "/assets/images/clothing.png",
-              "title": "Clothing & Personal Care",
-              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"3: Personal Artifacts\")"
-            },
-            {
-              "thumbnail": "/assets/images/mat.png",
-              "title": "Materials, Tools & Equipment",
-              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"4: Tools %26 Equipment for Materials\")"
-            },
-            {
-              "thumbnail": "/assets/images/st.png",
-              "title": "Science & Technology",
-              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"5: Tools %26 Equipment for Science %26 Technology\")"
-            },
-            {
-              "thumbnail": "/assets/images/comm.png",
-              "title": "Communications",
-              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"6: Tools %26 Equipment for Communication\")"
-            }, {
-              "thumbnail": "/assets/images/Transportation.png",
-              "title": "Transportation",
-              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"7: Distribution %26 Transportation Artifacts\")"
-            }, {
-              "thumbnail": "/assets/images/art.png",
-              "title": "Arts & Printed Media",
-              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"8: Communication Artifacts\")"
-            }, {
-              "thumbnail": "/assets/images/rec.png",
-              "title": "Recreation",
-              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"9: Recreational Artifacts\")"
-            }, {
-              "thumbnail": "/assets/images/other.png",
-              "title": "Other",
-              "link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"10: Unclassifiable Artifacts\")"
-            }
-          ]
-        }
-      }
-    ]
-  }
+			"searchURL": "/scripts/mwimain.dll?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&KEEP=Y&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM"
+		},
+		"component": "SimpleSearchBanner"
+	},
+	{
+		"component": "Section",
+		"data": {
+			"heading": "About us",
+			"divider": true,
+			"description": "The Diefenbunker aims to increase, throughout Canada and the world, interest in and a critical understanding of the Cold War, by preserving the Diefenbunker as a national historic site, and operating a Cold War museum. The museum holds over 11,000 3-D and 2-D artifacts relevant to Canada’s Cold War history, spanning between 1945 and 1991. Search through this site to learn more about specific items in the Diefenbunker’s collections and archives"
+		}
+	},
+	{
+		"component": "Section",
+		"data": { "heading": "Browse by category" },
+		"children": [
+			{
+				"component": "ImageCarousel",
+				"data": {
+					"data": [
+						{
+							"thumbnail": "/assets/images/building.png",
+							"title": "Building Components",
+							"link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&language=144&DATABASE=COLLECTIONS_WEB&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"1: Built Environment Artifacts\")"
+						},
+						{
+							"thumbnail": "/assets/images/furnishing.png",
+							"title": "Furnishings",
+							"link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"2: Furnishings\")"
+						},
+						{
+							"thumbnail": "/assets/images/clothing.png",
+							"title": "Clothing & Personal Care",
+							"link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"3: Personal Artifacts\")"
+						},
+						{
+							"thumbnail": "/assets/images/mat.png",
+							"title": "Materials, Tools & Equipment",
+							"link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"4: Tools %26 Equipment for Materials\")"
+						},
+						{
+							"thumbnail": "/assets/images/st.png",
+							"title": "Science & Technology",
+							"link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"5: Tools %26 Equipment for Science %26 Technology\")"
+						},
+						{
+							"thumbnail": "/assets/images/comm.png",
+							"title": "Communications",
+							"link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"6: Tools %26 Equipment for Communication\")"
+						},
+						{
+							"thumbnail": "/assets/images/Transportation.png",
+							"title": "Transportation",
+							"link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"7: Distribution %26 Transportation Artifacts\")"
+						},
+						{
+							"thumbnail": "/assets/images/art.png",
+							"title": "Arts & Printed Media",
+							"link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"8: Communication Artifacts\")"
+						},
+						{
+							"thumbnail": "/assets/images/rec.png",
+							"title": "Recreation",
+							"link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"9: Recreational Artifacts\")"
+						},
+						{
+							"thumbnail": "/assets/images/other.png",
+							"title": "Other",
+							"link": "?UNIONSEARCH&SIMPLE_EXP=Y&ERRMSG=[MESSAGES]374.htm&APPLICATION=UNION_VIEW&DATABASE=COLLECTIONS_WEB&language=144&REPORT=WEB_UNION_SUM_COL&EXP=(CATEGORY \"10: Unclassifiable Artifacts\")"
+						}
+					]
+				}
+			}
+		]
+	}
 ]

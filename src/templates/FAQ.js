@@ -1,13 +1,13 @@
-import json from "../templates/json/faq/data.json";
+import json from '../templates/json/faq/data.json'
 
 const FAQ = [
-  {
-    component: "Layout",
-    data: {
-      active: "FAQ",
-    },
-    children: [...json],
-  },
-];
+	{
+		component: 'Layout',
+		data: {
+			active: 'FAQ',
+		},
+		children: [...json],
+	},
+]
 
-export default FAQ;
+export default FAQ
